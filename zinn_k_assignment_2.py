@@ -38,10 +38,17 @@ provincial_tax = vehicle_price * PST
 
 final_cost = federal_tax + provincial_tax + vehicle_price
 
-print("Purchase price:", vehicle_price, "Provincial tax:", provincial_tax, "Federal tax:", federal_tax, "Total:", final_cost)
+# The lines were being reported as too long so I decided to condense them by making multiple lines
 
-print(f"Purchase price: ${vehicle_price:,.2f}", f"Provincial tax: ${provincial_tax:,.2f}", f"Federal tax: ${federal_tax:,.2f}", f"Total: ${final_cost:,.2f}")
+print("Purchase price:", vehicle_price, 
+      "Provincial tax:", provincial_tax, 
+      "Federal tax:",federal_tax, 
+      "Total:", final_cost)
 
+print(f"Purchase price: ${vehicle_price:,.2f}",
+    f"Provincial tax: ${provincial_tax:,.2f}",
+    f"Federal tax: ${federal_tax:,.2f}",
+    f"Total: ${final_cost:,.2f}")
 # LISTS
 
 integers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
