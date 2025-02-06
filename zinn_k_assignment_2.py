@@ -50,21 +50,23 @@ print(type(integers))
 
 print("List:", integers)
 
+#I think I could call __author__ instead of creating a new variable?
+
 name = "Kelton"
 
 integers.insert(5, name)
 
-print(integers)
+print("List with name:", integers)
 
 integers.remove(9)
 
-print(integers)
+print("Updated list:", integers)
 
 letters = ["A", "B", "C"]
 
 catalogue = integers + letters 
 
-print(catalogue)
+print("Catalogue:", catalogue)
 
 # TUPLES
 
@@ -72,7 +74,7 @@ Provinces = ("ON", "MB", "AB", "SK")
 
 print(type(Provinces))
 
-print(Provinces)
+print("Province abreviations:", Provinces)
 
 # DICTIONARIES
 
@@ -83,16 +85,43 @@ coins = {
 }
 print(type(coins))
 
-print(coins)
+print("List of coins:", coins)
 
 coins['nickel'] = 5
 coins['dime'] = 10 
 coins['quarter'] = 25
 
-print(coins)
+print("Value in pennies:", coins)
 
 coins['loonie'] = 100
 coins['toonie'] = 200
 
-print(coins)
+print("Value in pennies updated", coins)
 
+# SETS
+
+even_numbers = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20}
+
+print(type(even_numbers))
+
+print("Even numbers:", even_numbers)
+
+fives = {5, 10, 15, 20}
+
+print("Multiples of five:", fives)
+
+combined = even_numbers.union(fives)
+
+print("Sets combined:", combined)
+
+shared_numbers = even_numbers.intersection(fives)
+
+print("Shared numbers:", shared_numbers)
+
+difference = even_numbers.difference(fives)
+
+print("In the first set but not the second:", difference)
+
+difference_fives = fives.difference(even_numbers)
+
+print("In the second set but not the first:", difference_fives)
