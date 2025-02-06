@@ -41,3 +41,29 @@ final_cost = federal_tax + provincial_tax + vehicle_price
 print("Purchase price:", vehicle_price, "Provincial tax:", provincial_tax, "Federal tax:", federal_tax, "Total:", final_cost)
 
 print(f"Purchase price: ${vehicle_price:,.2f}", f"Provincial tax: ${provincial_tax:,.2f}", f"Federal tax: ${federal_tax:,.2f}", f"Total: ${final_cost:,.2f}")
+
+# LISTS
+
+integers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+print(type(integers))
+
+print("List:", integers)
+
+name = "Kelton"
+
+integers.insert(5, name)
+
+print(integers)
+
+integers.remove(9)
+
+print(integers)
+
+letters = ["A", "B", "C"]
+
+catalogue = integers + letters 
+
+print(catalogue)
+
+
